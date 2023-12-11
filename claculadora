@@ -1,0 +1,175 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace claculadora_v2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int op, A, B, fact,L=0,r=0;
+            
+            double a, b, c,delta;
+            double resultado = 0;
+
+            //escver o menu
+            Console.WriteLine("menu da calculadora\n\n");
+            Console.WriteLine("1-somar");
+            Console.WriteLine("2-subetrair");
+            Console.WriteLine("3-multipilicar");
+            Console.WriteLine("4-dividir");
+            Console.WriteLine("5-clacluar raiz quadrada");
+            Console.WriteLine("6-clacular da um opraçao do 2 grau");
+            Console.WriteLine("7-clacula do faccial\n");
+            Console.WriteLine("8-Area de um triangulo");
+            Console.WriteLine("9-area de um quadrado");
+            Console.WriteLine("10-area de um cilindro");
+            Console.WriteLine("11-area de um circulo");
+            Console.WriteLine("12-area de um retangulo");
+            Console.WriteLine("13-area de um cone");
+            Console.WriteLine("escreva a sua opeçao: ");
+            Console.WriteLine("opeçao: ");
+            //cosigo com  estrutura  de controlo de exucuçao  de decoçao swich.case
+            //ler opeçao
+
+            op = Convert.ToInt32(Console.ReadLine());
+
+            switch (op)
+            {
+                case 1:
+                    Console.WriteLine("esclheu somar");
+                    Console.WriteLine("intruduza um valor para A: ");
+                    //ler A
+                    A = Convert.ToInt32(Console.ReadLine());
+
+                    //ler B 
+                    Console.WriteLine("intruda um valor para B: ");
+                    B = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(A + B);
+                    break;
+            
+                case 2:
+                    Console.WriteLine("esclheu subetrair");
+                    Console.WriteLine("intruduza um valor para A: ");
+                   
+                    //ler A
+                    A = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("intruda um valor para B: ");
+                    //ler B 
+                    B = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine( A - B);
+                    break;
+            
+                case 3:
+                    Console.WriteLine("esclheu multipilicar ");
+                    Console.WriteLine("intruduza um valor para A: ");
+                   ;
+                    //ler A
+                    A = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("intruda um valor para B: ");
+                    //ler B 
+                    B = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine( A * B);
+                    break;
+            
+                case 4:
+                    Console.WriteLine("esclheu dividir");
+                    Console.WriteLine("intruduza um valor para A: ");
+                    
+                    //ler A
+                    A = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("intruda um valor para B: ");
+                    //ler B 
+                    B = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine( A / B);
+                    break;
+            
+                case 5:
+                    Console.WriteLine("esclheu clacluar raiz quadrada");
+                    Console.WriteLine("intruduza um valor para A: ");
+                    
+                    //ler A
+                    A = Convert.ToInt32(Console.ReadLine());
+                    //funaçao SQRT() -claculha de uma raiz quadrada 
+                    //nao existe numeros negativos nada de numeros negativos
+                    //relsove o problema do tipo double
+                    resultado = Math.Sqrt(A);
+                    Console.WriteLine(resultado);
+                    break;
+            
+                case 6:
+                    Console.WriteLine("esclheu clacular da um opraçao do 2 grau");
+                    Console.WriteLine("intruduza um valor para a: ");
+
+                    //ler A
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("intruda um valor para b: ");
+                    b = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("intruda um valor para c: ");
+                    c= Convert.ToDouble(Console.ReadLine());
+                    delta = (b * b) - (4 * a * c);
+                    if (delta < 0) delta = -1;
+                    
+                    
+                    Console.WriteLine(delta);
+
+                    break;
+                  
+                    
+            
+                case 7:
+                    Console.WriteLine("esclheu clacula do factoriali");
+                    A = Convert.ToInt32(Console.ReadLine());
+                    fact = A;
+                    while (A > 1)
+                    {
+                        A--;
+                        fact *= A;
+                    }
+                    Console.WriteLine(fact);
+                    break;
+                case 8:
+                    
+                        
+                    break;
+                case 9:
+                    Console.WriteLine("escolheu clacualar a area de um quadrado: ");
+                   
+                    Console.WriteLine("intrudza a area do quadrado: ");
+                    A = Convert.ToInt32(Console.ReadLine());
+                    L = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("A area do quadrado é :");
+                    Console.WriteLine(L*L);
+
+
+                    break;
+                case 10:
+                    Console.WriteLine("escolheu a area de um cilindro: ");
+
+                    break;
+                case 11:
+                    Console.WriteLine("area de um circulo");
+                    r = Convert.ToInt32(Console.ReadLine());
+                    r = (r * r);
+                    A =(Math.)
+                    break;
+                case 12:
+                    break;
+                case 13:
+                    break;
+                default: Console.WriteLine("erro");
+                    break;
+
+
+            }
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
